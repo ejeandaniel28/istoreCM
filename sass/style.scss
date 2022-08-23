@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=M+PLUS+1p:wght@100;300;400;700&display=swap');
+$defaultfontfamily: 'Kalam', cursive;
+$secondaryfontfamily: 'M PLUS 1p', sans-serif;
+
+$headerbackgroud: #1D1D1F;
+
+$defaultcolor: #333333;
+
+
+
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  $secondaryfontfamily;
+    color: $defaultcolor;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $headerbackgroud;
+    height: 3em;
+    opacity: 0.9;
+    color: #F5F5F7;
+
+    .fa-brands{
+        font-size: 1.3em;
+    }
+
+    .logoApple{
+        position: relative;
+        padding-left: 7em;
+    }
+    .logoMenu{
+        position: absolute;
+        padding-right: 22em;
+    }
+    .logoCart{
+        margin-right: -4em;
+    }
+    .menu{
+        display: none;
+    }
+    
+}
+
+#product-slider{
+    display: flex;
+    flex-wrap: wrap;
+    .slider{
+        position: relative;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 28em;
+        }
+        .productslider{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 5em;
+            .titreslider{
+                width: 70%;
+                margin: 0 1em;
+                font-size: 1.8em;
+                letter-spacing: -1px;
+                line-height: 1em;
+                font-style: italic;
+                
+            }
+            .textslider{
+                width: 70%;
+                font-size: 0.9em;
+                margin: 1em;
+                line-height: 1em;
+            }
+        }
+    }
+}
+
+
+#Nosproducts{
+    margin: 0;
+    position: relative;
+    .macbook,.iphone{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        .texteProduits{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        img{
+            display: block;
+            height: 18em;
+            width: 100%;
+        }
+
+    }
+
+}
+
+
+
+@mixin button {
+    background: linear-gradient(blue,#0271E2);
+    width: 8em;
+    height: 2.5em;
+    border-radius: 1.5em ;
+    border: none;
+    a{
+        text-decoration: none;
+        color: #eadddd;
+    }
+}
+
+.button{
+    @include button()
+}

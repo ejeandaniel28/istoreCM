@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=M+PLUS+1p:wght@100;300;400;700&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  color: #333333; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1D1D1F;
+  height: 3em;
+  opacity: 0.9;
+  color: #F5F5F7; }
+  header .fa-brands {
+    font-size: 1.3em; }
+  header .logoApple {
+    position: relative;
+    padding-left: 7em; }
+  header .logoMenu {
+    position: absolute;
+    padding-right: 22em; }
+  header .logoCart {
+    margin-right: -4em; }
+  header .menu {
+    display: none; }
+
+#product-slider {
+  display: flex;
+  flex-wrap: wrap; }
+  #product-slider .slider {
+    position: relative;
+    width: 100%; }
+    #product-slider .slider img {
+      width: 100%;
+      height: 28em; }
+    #product-slider .slider .productslider {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      top: 5em; }
+      #product-slider .slider .productslider .titreslider {
+        width: 70%;
+        margin: 0 1em;
+        font-size: 1.8em;
+        letter-spacing: -1px;
+        line-height: 1em;
+        font-style: italic; }
+      #product-slider .slider .productslider .textslider {
+        width: 70%;
+        font-size: 0.9em;
+        margin: 1em;
+        line-height: 1em; }
+
+#Nosproducts {
+  margin: 0;
+  position: relative; }
+  #Nosproducts .macbook, #Nosproducts .iphone {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%; }
+    #Nosproducts .macbook .texteProduits, #Nosproducts .iphone .texteProduits {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+    #Nosproducts .macbook img, #Nosproducts .iphone img {
+      display: block;
+      height: 18em;
+      width: 100%; }
+
+.button {
+  background: linear-gradient(blue, #0271E2);
+  width: 8em;
+  height: 2.5em;
+  border-radius: 1.5em;
+  border: none; }
+  .button a {
+    text-decoration: none;
+    color: #eadddd; }
+
+/*# sourceMappingURL=style.css.map */
